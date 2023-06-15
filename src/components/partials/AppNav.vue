@@ -73,5 +73,6 @@ export default {
     .my_list-nav {
         display: flex;
         align-items: center;
+        gap: 1rem;
     }
 </style>
