@@ -21,7 +21,7 @@ export default {
 @use '../../styles/partials/_variables.scss' as *;
 
     .my_special-nav {
-        height: 250px;
+        height: 200px;
         background-color: $digital-navigation;
     }
 </style>
