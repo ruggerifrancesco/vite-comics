@@ -1,19 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@use '../styles/partials/_mixins.scss' as *;
+@use '../styles/partials/variables.scss' as *;
 
-    outline: 1px solid red;
+* {
+    // outline: 1px solid red;
 }
 
-#app {
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
+main {
+    color: white;
+    height: 200px;
+    background-color: $main-app-bg;
 }
 
 img {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.wrapper {
+    @include page-wrapper ();
 }

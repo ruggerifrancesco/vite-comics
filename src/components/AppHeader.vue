@@ -1,9 +1,11 @@
 <template>
     <header class="my_header">
-        <div class="my_page-logo">
-            <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
+        <div class="wrapper">
+            <div class="my_page-logo">
+                <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
+            </div>
+            <AppNav />
         </div>
-        <AppNav />
     </header>
 </template>
 

@@ -20,6 +20,4 @@
 
 <style lang="scss">
   @import './styles/general.scss';
-  @import './styles/partials/_mixins';
-  @import './styles/partials/_variables';
 </style>
