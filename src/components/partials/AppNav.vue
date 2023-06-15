@@ -71,6 +71,7 @@ export default {
 
 <style lang="scss">
     .my_list-nav {
-        @include
+        display: flex;
+        align-items: center;
     }
 </style>

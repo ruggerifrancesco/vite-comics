@@ -1,5 +1,5 @@
 <template>
-    <header class="d-flex align-items-center">
+    <header class="my_header">
         <div class="my_page-logo">
             <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
         </div>
@@ -25,5 +25,10 @@ export default {
 <style lang="scss">
     .my_page-logo {
         width: 100px;
+    }
+    .my_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 </style>
