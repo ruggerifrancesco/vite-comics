@@ -22,6 +22,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../styles/partials/_mixins.scss' as *;
+@use '../styles/partials/variables.scss' as *;
 
+    main {
+        color: white;
+        height: 200px;
+        background-color: $main-app-bg;
+    }
 </style>

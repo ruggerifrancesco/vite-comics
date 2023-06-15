@@ -1,7 +1,15 @@
 <template>
-    <div>
-        
-    </div>
+    <footer>
+        <!-- Main Footer -->
+        <section>
+
+        </section>
+
+        <!-- Second Footer -->
+        <section>
+
+        </section>
+    </footer>
 </template>
 
 <script>
@@ -14,6 +22,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     
 </style>
