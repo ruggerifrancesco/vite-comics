@@ -35,9 +35,7 @@ export default {
     }
 
     .wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex (row, space-between, center);
         padding: 1rem 0;
     }
 </style>
