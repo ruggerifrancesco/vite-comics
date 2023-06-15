@@ -3,3 +3,10 @@
     width: 90%;
     max-width: 1500px;
 }
+
+@mixin flex($direction, $justify, $align) { 
+    display: flex; 
+    flex-direction: $direction; 
+    justify-content: $justify; 
+    align-items: $align; 
+}
