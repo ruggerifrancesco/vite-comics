@@ -24,11 +24,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../styles/partials/_mixins.scss' as *;
+@use '../styles/partials/variables.scss' as *;
     .my_page-logo {
         width: 100px;
     }
     .my_header {
+        background-color: $header;
+    }
+
+    .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
