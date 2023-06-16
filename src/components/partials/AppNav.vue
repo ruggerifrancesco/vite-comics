@@ -2,7 +2,7 @@
     <nav>
         <ul class="my_list-nav">
             <li v-for="link in navItems">
-                <a href="#">{{ link.name }}</a>
+                <a :href="link.href">{{ link.item }}</a>
             </li>
         </ul>
     </nav>
@@ -16,52 +16,62 @@ export default {
                 {
                     id: 1,
                     active: false,
-                    name: 'Characters',
+                    item: 'Characters',
+                    href: '#',
                 },
                 {
                     id: 2,
                     active: false,
-                    name: 'Comics',
+                    item: 'Comics',
+                    href: '#',
                 },
                 {
                     id: 3,
                     active: false,
-                    name: 'Movies',
+                    item: 'Movies',
+                    href: '#',
                 },
                 {
                     id: 4,
                     active: false,
-                    name: 'Tv',
+                    item: 'Tv',
+                    href: '#',
                 },
                 {
                     id: 5,
                     active: false,
-                    name: 'Games',
+                    item: 'Games',
+                    href: '#',
                 },
                 {
                     id: 6,
                     active: false,
-                    name: 'Collectibles',
+                    item: 'Collectibles',
+                    href: '#',
                 },
                 {
                     id: 7,
                     active: false,
-                    name: ' Videos',
+                    item: ' Videos',
+                    href: '#',
                 },
                 {
                     id: 8,
                     active: false,
-                    name: 'Fans',
+                    item: 'Fans',
+                    href: '#',
                 },
                 {
                     id: 9,
                     active: false,
-                    name: 'News',
+                    item: 'News',
+                    href: '#',
                 },
                 {
                     id: 10,
                     active: false,
-                    name: 'Shop',
+                    item: 'Shop',
+                    href: '#',
                 },
             ]
         }
