@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="wrapper">
-            <AppCard v-for="i in 12"/>
+            <AppCard v-for="card in cards"/>
         </div>
     </main>
     <AppSpecialNav />
