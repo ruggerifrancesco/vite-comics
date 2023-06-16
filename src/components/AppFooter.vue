@@ -176,7 +176,6 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 
     footer {
-        height: 600px;
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
         position: relative;
@@ -215,10 +214,6 @@ export default {
     .miscellaneous-footer {
         background-color: $second-footer-bg;
         height: 150px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
     }
 
 </style>
