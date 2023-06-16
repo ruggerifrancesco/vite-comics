@@ -75,12 +75,12 @@ export default {
 
     .my_list-nav {
         @include flex (row, none, center);
-        gap: 1rem;
+        gap: 2rem;
     }
 
     li a {
         font-family: 'Oswald', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
         color: $secondary-color;
     }
