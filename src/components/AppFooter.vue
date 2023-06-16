@@ -9,13 +9,13 @@
                         <h4>Dc Comics</h4>
                         <ul>
                             <li v-for="link in dcComicsItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
+                                <a :href="link.href">{{ link.item }}</a>
                             </li>
                         </ul>
                         <h4>Shop</h4>
                         <ul>
                             <li v-for="link in shopItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
+                                <a :href="link.href">{{ link.item }}</a>
                             </li>
                         </ul>
                     </div>
@@ -23,7 +23,7 @@
                         <h4>Dc</h4>
                         <ul>
                             <li v-for="link in dcItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
+                                <a :href="link.href">{{ link.item }}</a>
                             </li>
                         </ul>
                     </div>
@@ -31,7 +31,7 @@
                         <h4>Sites</h4>
                         <ul>
                             <li v-for="link in siteItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
+                                <a :href="link.href">{{ link.item }}</a>
                             </li>
                         </ul>
                     </div>
@@ -60,110 +60,110 @@ export default {
             dcComicsItemsList: [
                 {
                     item: 'Characters',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Comics',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Movies',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'TV',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Games',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Videos',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'News',
-                    link: '#',
+                    href: '#',
                 },
             ],
             shopItemsList: [
                 {
                     item: 'Shop DC',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Shop DC Collectibles',
-                    link: '#',
+                    href: '#',
                 },
 
             ],
             dcItemsList: [
                 {
                     item: 'Term of Use',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Privacy Police (New)',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Ad Choises',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Advertising',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Jobs',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Subscription',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Talent Workshop',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'CPSC Certificates',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Ratings',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Shop Help',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'Contact Us',
-                    link: '#',
+                    href: '#',
                 },
             ],
             siteItemsList: [
                 {
                     item: 'DC',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'MAD Magazine',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'DC Kids',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'DC Universe',
-                    link: '#',
+                    href: '#',
                 },
                 {
                     item: 'DC Power Visa',
-                    link: '#',
+                    href: '#',
                 },
             ],
         }
@@ -182,7 +182,7 @@ export default {
         color: white;
     }
     ul {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
     }
     h4 {
         margin-bottom: 1rem;
