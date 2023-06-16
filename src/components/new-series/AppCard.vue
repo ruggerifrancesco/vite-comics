@@ -1,6 +1,6 @@
 <template>
     <article class="card-item">
-        <img :src="getImagePath()" alt="">
+        <img src="" alt="">
     </article>
 </template>
 
@@ -16,11 +16,6 @@ export default {
             price: String,
             series: String,
             type: String,
-        }
-    },
-    methods: {
-        getImagePath: function(img) {
-            return new URL(`../../assets/img/${img}`, import.meta.url).href;
         }
     },
 }
