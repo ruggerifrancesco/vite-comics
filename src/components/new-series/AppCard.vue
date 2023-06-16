@@ -39,7 +39,6 @@ export default {
 
     .card-img {
         aspect-ratio: 1/1;
-        margin-bottom: 1rem;
         
         img {
             object-fit: cover;
@@ -51,6 +50,7 @@ export default {
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
         color: white;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-top: 2rem;
     }
 </style>
