@@ -1,6 +1,6 @@
 <template>
-    <article>
-
+    <article class="card-item">
+        <img src="" alt="">
     </article>
 </template>
 
@@ -17,7 +17,12 @@ export default {
             series: String,
             type: String,
         }
-    }
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../../assets/img/${img}`, import.meta.url).href;
+        }
+    },
 }
 </script>
 
@@ -25,5 +30,10 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/variables.scss' as *;
 
-
+    .card-item {
+        background-color: $card-bg;
+        width: $card-w-h;
+        height: $card-w-h;
+        outline: 1px solid red;
+    }
 </style>

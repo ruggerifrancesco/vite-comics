@@ -104,11 +104,7 @@ export default {
 
     main {
         color: white;
-        height: 160px;
         background-color: $main-app-bg;
     }
-
-    h1 {
-        margin-bottom: 0;
-    }
+    
 </style>
