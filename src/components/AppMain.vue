@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="wrapper">
-            Content goes Here
+            <h1>{{ contentHere }}</h1>
         </div>
     </main>
     <AppSpecialNav />
@@ -16,7 +16,7 @@ export default {
     },
     data() {
         return {
-            
+           contentHere: '--> Content Goes Here <--', 
         }
     },
 }
@@ -28,7 +28,12 @@ export default {
 
     main {
         color: white;
-        height: 200px;
+        height: 160px;
         background-color: $main-app-bg;
+        @include flex (row, none, center);
+    }
+
+    h1 {
+        margin-bottom: 0;
     }
 </style>
