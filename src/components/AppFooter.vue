@@ -193,6 +193,7 @@ export default {
     }
     li a {
         color: $footer-links;
+        font-size: 0.92rem;
     }
     .main-footer {
         padding: 2.5rem 0;
