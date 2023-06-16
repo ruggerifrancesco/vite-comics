@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AppSpecialNav from './partials/AppSpecialNav.vue';
+import AppSpecialNav from './navigation-bars/AppSpecialNav.vue';
 
 export default {
     name: AppMain,

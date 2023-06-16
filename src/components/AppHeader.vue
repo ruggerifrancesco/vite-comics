@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import AppNav from './partials/AppNav.vue';
+import AppNav from './navigation-bars/AppNav.vue';
 
 export default {
     name: AppHeader,
