@@ -1,4 +1,8 @@
 <template>
+    <div class="my_page-logo">
+        <img src="../../assets/img/dc-logo.png" alt="DC Main Logo">
+    </div>
+
     <nav>
         <ul class="my_list-nav">
             <li v-for="link in navItems">
@@ -83,6 +87,9 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
+    .my_page-logo {
+        width: 100px;
+    }
     .my_list-nav {
         @include flex (row, none, center);
         gap: 2rem;
