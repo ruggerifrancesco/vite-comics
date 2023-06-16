@@ -89,11 +89,11 @@ export default {
             ],
             shopItemsList: [
                 {
-                    item: 'Characters',
+                    item: 'Shop DC',
                     link: '#',
                 },
                 {
-                    item: 'Comics',
+                    item: 'Shop DC Collectibles',
                     link: '#',
                 },
 
@@ -176,21 +176,30 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 
     footer {
-        height: 550px;
+        height: 600px;
         background-image: url(../assets/img/footer-bg.jpg);
         background-size: cover;
         position: relative;
         color: white;
         overflow: hidden;
     }
+    ul {
+        margin-bottom: 1.2rem;
+    }
     h4 {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
     }
+    li a {
+        color: $footer-links;
+    }
+    .main-footer {
+        padding: 2.5rem 0;
+    }
     .background-logo {
         position: absolute;
-        top: -4rem;
+        top: -6rem;
         right: 0;
     }
     .wrapper {
@@ -199,7 +208,7 @@ export default {
     }
     .links-wrapper {
         @include flex (row, none, flex-start);
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .miscellaneous-footer {
