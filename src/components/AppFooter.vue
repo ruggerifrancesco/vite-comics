@@ -180,7 +180,6 @@ export default {
         background-size: cover;
         position: relative;
         color: white;
-        overflow: hidden;
     }
     ul {
         margin-bottom: 1.2rem;
@@ -196,6 +195,7 @@ export default {
     }
     .main-footer {
         padding: 2.5rem 0;
+        overflow: hidden;
     }
     .background-logo {
         position: absolute;
