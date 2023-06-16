@@ -10,6 +10,7 @@
 
 <script>
 export default {
+    name: AppNav,
     data() {
         return {
             navItems: [
