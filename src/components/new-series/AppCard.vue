@@ -31,8 +31,6 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/variables.scss' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
     .card-item {
         width: calc((100% / 6) - 2rem);
         margin-bottom: 1.5rem;

@@ -1,6 +1,9 @@
 <template>
     <main>
         <div class="wrapper">
+            <div class="series-section-title">
+                <h2>Current Series</h2>
+            </div>
             <AppCard v-for="card in cards"
                 :thumbnail="card.thumb"
                 :price="card.price"
@@ -113,6 +116,23 @@ export default {
     .wrapper {
         @include flex (row, none, none);
         flex-wrap: wrap;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        position: relative;
+    }
+
+    .series-section-title {
+        position: absolute;
+        top: -1.5rem;
+        background-color: $primary-color;
+        padding: 0.6rem 2rem;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 0;
+        }
     }
 
 </style>
