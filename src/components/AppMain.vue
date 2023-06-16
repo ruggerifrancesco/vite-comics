@@ -1,7 +1,11 @@
 <template>
     <main>
         <div class="wrapper">
-            <AppCard v-for="card in cards"/>
+            <AppCard v-for="card in cards"
+                :thumbnail="card.thumb"
+                :price="card.price"
+                :series="card.series"
+                :type="card.type"/>
         </div>
     </main>
     <AppSpecialNav />
@@ -106,5 +110,5 @@ export default {
         color: white;
         background-color: $main-app-bg;
     }
-    
+
 </style>

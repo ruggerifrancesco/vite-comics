@@ -1,6 +1,6 @@
 <template>
     <article class="card-item">
-        <img src="" alt="">
+        <img :src="getImagePath()" alt="">
     </article>
 </template>
 
@@ -11,7 +11,7 @@ export default {
         }
     },
     props: {
-        singleCard: {
+        cardItem: {
             thumbnail: String,
             price: String,
             series: String,
