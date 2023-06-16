@@ -13,7 +13,6 @@
 import AppNav from './navigation-bars/AppNav.vue';
 
 export default {
-    name: AppHeader,
     components: {
         AppNav
     },

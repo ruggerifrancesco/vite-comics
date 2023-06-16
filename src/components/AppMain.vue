@@ -11,7 +11,6 @@
 import AppSpecialNav from './navigation-bars/AppSpecialNav.vue';
 
 export default {
-    name: AppMain,
     components: {
         AppSpecialNav
     },
