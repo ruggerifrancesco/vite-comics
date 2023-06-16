@@ -36,6 +36,6 @@ export default {
 
     .wrapper {
         @include flex (row, space-between, center);
-        padding: 1rem 0;
+        padding: 1.5rem 0;
     }
 </style>
