@@ -34,13 +34,14 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
     .card-item {
-        width: calc((100% / 6) - 1.5rem);
+        width: calc((100% / 6) - 2rem);
         margin-bottom: 1.5rem;
-        margin-left: 1.5rem;
+        margin-left: 2rem;
     }
 
     .card-img {
         aspect-ratio: 1/1;
+        margin-bottom: 1rem;
         
         img {
             object-fit: cover;
@@ -52,5 +53,6 @@ export default {
         font-family: 'Lato', sans-serif;
         text-transform: uppercase;
         color: white;
+        font-size: 1.1rem;
     }
 </style>
