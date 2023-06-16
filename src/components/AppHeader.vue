@@ -1,8 +1,16 @@
 <template>
     <header class="my_header">
+
         <div class="wrapper">
+            <div class="my_page-logo">
+                <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
+            </div>
             <AppNav />
         </div>
+
+        <section class="my_hero-section">
+            
+        </section>
     </header>
 </template>
 
@@ -29,6 +37,11 @@ export default {
     }
     .my_header {
         background-color: $header;
+    }
+
+    .my_hero-section {
+        background-image: url(../assets/img/jumbotron.jpg);
+        height: 600px;
     }
 
     .wrapper {
