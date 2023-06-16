@@ -41,6 +41,8 @@ export default {
 
     .my_hero-section {
         background-image: url(../assets/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 600px;
     }
 
