@@ -8,9 +8,7 @@
             <AppNav />
         </div>
 
-        <section class="my_hero-section">
-            
-        </section>
+        <section class="my_hero-section"></section>
     </header>
 </template>
 
