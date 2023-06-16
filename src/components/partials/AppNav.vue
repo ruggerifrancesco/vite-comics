@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <ul class="list-unstyled m-0 my_list-nav">
+        <ul class="my_list-nav">
             <li v-for="link in navItems">
                 <a href="#">{{ link.name }}</a>
             </li>
@@ -70,9 +70,11 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../../styles/partials/_mixins.scss' as *;
+@use '../../styles/partials/_variables.scss' as *;
+
     .my_list-nav {
-        display: flex;
-        align-items: center;
+        @include flex (row, none, center);
         gap: 1rem;
     }
 </style>
