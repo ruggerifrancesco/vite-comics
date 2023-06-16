@@ -114,7 +114,7 @@ export default {
         background-color: $main-app-bg;
     }
     .wrapper {
-        @include flex (row, none, none);
+        display: flex;
         flex-wrap: wrap;
         padding-top: 5rem;
         padding-bottom: 3rem;
@@ -123,7 +123,7 @@ export default {
 
     .series-section-title {
         position: absolute;
-        top: -1.5rem;
+        top: -2rem;
         background-color: $primary-color;
         padding: 0.6rem 2rem;
 
