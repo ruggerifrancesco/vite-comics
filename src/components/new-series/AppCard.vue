@@ -1,6 +1,6 @@
 <template>
     <article>
-        
+
     </article>
 </template>
 
@@ -8,9 +8,16 @@
 export default {
     data() {
         return {
-            
         }
     },
+    props: {
+        singleCard: {
+            thumbnail: String,
+            price: String,
+            series: String,
+            type: String,
+        }
+    }
 }
 </script>
 
