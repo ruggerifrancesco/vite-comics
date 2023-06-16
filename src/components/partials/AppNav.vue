@@ -69,12 +69,19 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
     .my_list-nav {
         @include flex (row, none, center);
         gap: 1rem;
+    }
+
+    li a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $secondary-color;
     }
 </style>

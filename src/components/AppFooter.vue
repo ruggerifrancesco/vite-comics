@@ -183,11 +183,15 @@ export default {
         color: white;
         overflow: hidden;
     }
+    h4 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
     .background-logo {
         position: absolute;
         top: -4rem;
         right: 0;
-
     }
     .wrapper {
         @include flex (row, space-between, flex-start);
@@ -195,6 +199,7 @@ export default {
     }
     .links-wrapper {
         @include flex (row, none, flex-start);
+        gap: 2rem;
     }
 
     .miscellaneous-footer {
