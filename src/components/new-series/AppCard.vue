@@ -1,6 +1,17 @@
 <template>
     <article class="card-item">
-        <img src="" alt="">
+
+        <div class="card-img">
+            <img :src="thumbnail" alt="">
+        </div>
+
+        <div class="card-infos">
+            <h5>Test</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+        </div>
+        
     </article>
 </template>
 
@@ -11,12 +22,10 @@ export default {
         }
     },
     props: {
-        cardItem: {
-            thumbnail: String,
-            price: String,
-            series: String,
-            type: String,
-        }
+        thumbnail: String,
+        price: String,
+        series: String,
+        type: String,
     },
 }
 </script>
@@ -26,9 +35,10 @@ export default {
 @use '../../styles/partials/variables.scss' as *;
 
     .card-item {
-        background-color: $card-bg;
-        width: $card-w-h;
-        height: $card-w-h;
-        outline: 1px solid red;
+        width: calc((100% / 6) - 1.5rem);
+        aspect-ratio: 1/1;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+        color: black;
     }
 </style>

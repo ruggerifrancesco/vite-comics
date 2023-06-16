@@ -110,5 +110,9 @@ export default {
         color: white;
         background-color: $main-app-bg;
     }
+    .wrapper {
+        @include flex (row, none, none);
+        flex-wrap: wrap;
+    }
 
 </style>
