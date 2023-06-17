@@ -2,7 +2,7 @@
     <article class="card-item">
 
         <div class="card-img">
-            <img :src="thumbnail" alt="">
+            <img :src="thumbnail" :alt="`${series} Serie`">
         </div>
 
         <div class="card-infos">
