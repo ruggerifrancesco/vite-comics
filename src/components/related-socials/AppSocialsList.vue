@@ -4,7 +4,7 @@
         <ul class="m-0">
             <li v-for="social in socialList">
                 <a :href="social.link">
-                    <img :src="getImagePath(social.srcIcon)" :alt="social.socialName">
+                    <img :src="getImagePath(social.srcIcon)" :alt="social.socialName" class="socialImg-icon">
                 </a>
             </li>
         </ul> 
@@ -66,11 +66,15 @@ export default {
     }
 
     .social-title {
-    color: $primary-color;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: 'Oswald', sans-serif;
-    margin-right: 2.5rem;
-}
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 2.5rem;
+    }
+
+    .socialImg-icon:hover {
+        filter: brightness(0) invert(1);
+    }
 </style>
