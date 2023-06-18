@@ -4,11 +4,18 @@
             <div class="series-section-title">
                 <h2>Current Series</h2>
             </div>
-            <AppCard v-for="card in cards"
-                :thumbnail="card.thumb"
-                :price="card.price"
-                :series="card.series"
-                :type="card.type"/>
+
+            <div class="series-wrapper">
+                <AppCard v-for="card in cards"
+                    :thumbnail="card.thumb"
+                    :price="card.price"
+                    :series="card.series"
+                    :type="card.type"/>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="load-more-btn">
+                Load more
+            </button>
         </div>
     </main>
     <AppSpecialNav />
@@ -114,16 +121,21 @@ export default {
         background-color: $main-app-bg;
     }
     .wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex (column, none, center);
         padding-top: 5rem;
         padding-bottom: 3rem;
         position: relative;
     }
 
+    .series-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .series-section-title {
         position: absolute;
         top: -2rem;
+        left: 0;
         background-color: $primary-color;
         padding: 0.6rem 2rem;
 
@@ -133,6 +145,13 @@ export default {
             font-family: 'Oswald', sans-serif;
             margin-bottom: 0;
         }
+    }
+
+    #load-more-btn {
+        font-family: 'Oswald', sans-serif;
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 0.5rem 4rem;
     }
 
 </style>
