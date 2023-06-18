@@ -151,7 +151,8 @@ export default {
         font-family: 'Oswald', sans-serif;
         border-radius: 0;
         text-transform: uppercase;
-        padding: 0.5rem 4rem;
+        padding: 0.5rem 5rem;
+        font-weight: 600;
     }
 
 </style>
