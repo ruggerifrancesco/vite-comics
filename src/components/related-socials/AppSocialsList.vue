@@ -4,27 +4,27 @@
         <ul class="m-0">
             <li>
                 <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
             </li>
         </ul> 
@@ -33,15 +33,34 @@
 </template>
 <script>
 export default {
-    
+    data() {
+        return {
+            socialList: [
+
+            ],
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>
+@use '../../styles/partials/_mixins.scss' as *;
+@use '../../styles/partials/_variables.scss' as *;
+
+    .socials-container {
+        @include flex (row, none, center);
+    }
+
+    ul {
+        @include flex (row, none, center);
+        gap: 1rem;
+    }
+
     .social-title {
     color: $primary-color;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
+    margin-right: 2.5rem;
 }
 </style>

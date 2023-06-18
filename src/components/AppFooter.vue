@@ -55,7 +55,7 @@
                         </button>
                     </div>
 
-
+                    <AppSocialsListVue />
                 </div>
             </div>
         </section>
@@ -63,7 +63,12 @@
 </template>
 
 <script>
+import AppSocialsListVue from './related-socials/AppSocialsList.vue';
+
 export default {
+    components: {
+        AppSocialsListVue,
+    },
     data() {
         return {
             dcComicsItemsList: [
