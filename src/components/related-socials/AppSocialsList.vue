@@ -46,7 +46,8 @@ export default {
     },
     methods: {
         getImagePath: function(img) {
-            return new URL(`../assets/social-icons/${img}`, import.meta.url).href;
+            // Updated the path here and look all the folders parents
+            return new URL(`../../assets/social-icons/${img}`, import.meta.url).href;
         }
     },
 }
