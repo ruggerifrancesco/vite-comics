@@ -48,6 +48,44 @@
         <section class="miscellaneous-footer">
             <div class="wrapper">
 
+                <div class="miscellaneous-wrapper">
+                    <div class="signUp-btn-container">
+                        <button type="button" class="btn btn-outline-primary" id="signUp-btn">
+                            Sign Up Now!
+                        </button>
+                    </div>
+
+                    <div class="socials-container">
+                        <span class="social-title">Follow Us</span>
+                        <ul class="m-0">
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../assets/img/footer-facebook.png" alt="Facebook link">
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
             </div>
         </section>
     </footer>
@@ -203,7 +241,6 @@ export default {
         right: 0;
     }
     .wrapper {
-        @include flex (row, space-between, flex-start);
         position: relative;
     }
     .links-wrapper {
@@ -213,7 +250,27 @@ export default {
 
     .miscellaneous-footer {
         background-color: $second-footer-bg;
-        height: 150px;
+        padding: 2rem 0;
+    }
+
+    .miscellaneous-wrapper {
+       @include flex (row, space-between, center); 
+    }
+
+    #signUp-btn {
+        color: white;
+        border-radius: 0;
+        border-width: 3px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    .social-title {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
     }
 
 </style>
