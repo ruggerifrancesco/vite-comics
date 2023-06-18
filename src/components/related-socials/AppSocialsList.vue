@@ -24,22 +24,22 @@ export default {
                 {
                     socialName: 'Twitter',
                     link: '#',
-                    srcIcon: 'footer-facebook.png',
+                    srcIcon: 'footer-twitter.png',
                 },
                 {
                     socialName: 'Youtube',
                     link: '#',
-                    srcIcon: 'footer-facebook.png',
+                    srcIcon: 'footer-youtube.png',
                 },
                 {
                     socialName: 'Pinterest',
                     link: '#',
-                    srcIcon: 'footer-facebook.png',
+                    srcIcon: 'footer-pinterest.png',
                 },
                 {
                     socialName: 'Periscope',
                     link: '#',
-                    srcIcon: 'footer-facebook.png',
+                    srcIcon: 'footer-periscope.png',
                 },                
             ],
         }
