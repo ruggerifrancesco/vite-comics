@@ -3,8 +3,8 @@
         <span class="social-title">Follow Us</span>
         <ul class="m-0">
             <li v-for="social in socialList">
-                <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
+                <a :href="social.link">
+                    <img :src="getImagePath(social.srcIcon)" :alt="social.socialName">
                 </a>
             </li>
         </ul> 
@@ -17,31 +17,36 @@ export default {
         return {
             socialList: [
                 {
-                    social: 'Facebook',
+                    socialName: 'Facebook',
                     link: '#',
-                    srcIcon: '../../assets/img/footer-facebook.png',
+                    srcIcon: 'footer-facebook.png',
                 },
                 {
-                    social: 'Facebook',
+                    socialName: 'Twitter',
                     link: '#',
-                    srcIcon: '../../assets/img/footer-facebook.png',
+                    srcIcon: 'footer-facebook.png',
                 },
                 {
-                    social: 'Facebook',
+                    socialName: 'Youtube',
                     link: '#',
-                    srcIcon: '../../assets/img/footer-facebook.png',
+                    srcIcon: 'footer-facebook.png',
                 },
                 {
-                    social: 'Facebook',
+                    socialName: 'Pinterest',
                     link: '#',
-                    srcIcon: '../../assets/img/footer-facebook.png',
+                    srcIcon: 'footer-facebook.png',
                 },
                 {
-                    social: 'Facebook',
+                    socialName: 'Periscope',
                     link: '#',
-                    srcIcon: '../../assets/img/footer-facebook.png',
+                    srcIcon: 'footer-facebook.png',
                 },                
             ],
+        }
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../assets/social-icons/${img}`, import.meta.url).href;
         }
     },
 }
