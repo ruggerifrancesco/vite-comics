@@ -2,27 +2,7 @@
     <div class="socials-container">
         <span class="social-title">Follow Us</span>
         <ul class="m-0">
-            <li>
-                <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
-                </a>
-            </li>
-            <li>
+            <li v-for="social in socialList">
                 <a href="#">
                     <img src="../../assets/img/footer-facebook.png" alt="Facebook link">
                 </a>
@@ -36,7 +16,31 @@ export default {
     data() {
         return {
             socialList: [
-
+                {
+                    social: 'Facebook',
+                    link: '#',
+                    srcIcon: '../../assets/img/footer-facebook.png',
+                },
+                {
+                    social: 'Facebook',
+                    link: '#',
+                    srcIcon: '../../assets/img/footer-facebook.png',
+                },
+                {
+                    social: 'Facebook',
+                    link: '#',
+                    srcIcon: '../../assets/img/footer-facebook.png',
+                },
+                {
+                    social: 'Facebook',
+                    link: '#',
+                    srcIcon: '../../assets/img/footer-facebook.png',
+                },
+                {
+                    social: 'Facebook',
+                    link: '#',
+                    srcIcon: '../../assets/img/footer-facebook.png',
+                },                
             ],
         }
     },
