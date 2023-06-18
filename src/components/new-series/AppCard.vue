@@ -2,7 +2,9 @@
     <article class="card-item">
 
         <div class="card-img">
-            <img :src="thumbnail" :alt="`${series} Serie`">
+            <a href="#">
+                <img :src="thumbnail" :alt="`${series} Serie`">
+            </a>
         </div>
 
         <div class="card-infos">
@@ -43,6 +45,10 @@ export default {
         img {
             object-fit: cover;
             object-position: top;
+        }
+
+        &:hover {
+            transform: scale(1.05);
         }
     }
 
