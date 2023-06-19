@@ -65,17 +65,17 @@ export default {
 
     .my_store-nav {
         background-color: $digital-navigation;
+        padding: 3rem 0;
     }
 
     .wrapper {
         @include flex (row, space-around, center);
     }
 
-    .buy-store-section * {
-        outline: 1px solid red;
+    .buy-store-section {
 
         img {
-            width: 5rem;
+            width: 4rem;
             aspect-ratio: 1/1;
             object-fit: contain;
         }
@@ -83,5 +83,12 @@ export default {
 
     .store-context {
         @include flex (row, none, center);
+        
+        .store-label {
+            color: white;
+            text-transform: uppercase;
+            font-family: "Lato", sans-serif;
+            margin-left: 1rem;
+        }
     }
 </style>
