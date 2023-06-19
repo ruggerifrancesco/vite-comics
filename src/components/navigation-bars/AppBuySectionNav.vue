@@ -15,7 +15,11 @@ export default {
     data() {
         return {
             buySections: [
-
+                {
+                    iconProduct: 'Digital Comics',
+                    link: '',
+                    iconSrc: '',
+                },
             ],
         }
     },
