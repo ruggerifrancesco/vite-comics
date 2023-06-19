@@ -17,8 +17,28 @@ export default {
             buySections: [
                 {
                     iconProduct: 'Digital Comics',
-                    link: '',
-                    iconSrc: '',
+                    link: '#',
+                    iconSrc: 'buy-comics-digital-comics.png',
+                },
+                {
+                    iconProduct: 'DC Merchandise',
+                    link: '#',
+                    iconSrc: 'buy-comics-merchandise.png',
+                },
+                {
+                    iconProduct: 'Subscription',
+                    link: '#',
+                    iconSrc: 'buy-comics-subscriptions.png',
+                },
+                {
+                    iconProduct: 'Comic Shop Locator',
+                    link: '#',
+                    iconSrc: 'buy-comics-shop-locator.png',
+                },
+                {
+                    iconProduct: 'DC Power Visa',
+                    link: '#',
+                    iconSrc: 'buy-dc-power-visa.svg',
                 },
             ],
         }
