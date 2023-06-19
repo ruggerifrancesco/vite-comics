@@ -3,7 +3,7 @@
         <div class="wrapper">
 
             <div class="buy-navigation-btn" v-for="product in buySections">
-                
+
             </div>
 
         </div>
@@ -14,7 +14,15 @@
 export default {
     data() {
         return {
-            buySections: [],
+            buySections: [
+
+            ],
+        }
+    },
+    methods: {
+        getImagePath: function(img) {
+            // Updated the path here and look all the folders parents
+            return new URL(`../../assets/products-icons/${img}`, import.meta.url).href;
         }
     },
 }
