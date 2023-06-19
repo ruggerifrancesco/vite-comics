@@ -19,6 +19,7 @@
 
 <script>
 export default {
+    name: 'AppBuySectionNav',
     data() {
         return {
             storeSections: [

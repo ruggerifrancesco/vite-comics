@@ -89,6 +89,7 @@ import FooterLinksSites from './footer-components/FooterLinksSites.vue';
 import AppSocialsListVue from './footer-components/AppSocialsList.vue';
 
 export default {
+    name: 'AppFooter',
     components: {
         FooterLinksDcComics,
         FooterLinksShopVue,

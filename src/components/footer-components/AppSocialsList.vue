@@ -9,6 +9,7 @@
 </template>
 <script>
 export default {
+    name: 'AppSocialsList',
     props: {
         name: String,
         link: String,

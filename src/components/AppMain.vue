@@ -26,6 +26,7 @@ import AppCard from './new-series/AppCard.vue';
 import AppBuySectionNav from './navigation-bars/AppBuySectionNav.vue';
 
 export default {
+    name: 'AppMain',
     components: {
         AppCard,
         AppBuySectionNav
