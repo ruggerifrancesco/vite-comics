@@ -79,6 +79,10 @@ export default {
             aspect-ratio: 1/1;
             object-fit: contain;
         }
+
+        &:hover {
+            transform: scale(1.05)
+        }
     }
 
     .store-context {
