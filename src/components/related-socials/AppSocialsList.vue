@@ -1,48 +1,18 @@
 <template>
-    <div class="socials-container">
-        <span class="social-title">Follow Us</span>
-        <ul class="m-0">
-            <li v-for="social in socialList">
-                <a :href="social.link">
-                    <img :src="getImagePath(social.srcIcon)" :alt="social.socialName" class="socialImg-icon">
-                </a>
-            </li>
-        </ul> 
-    </div>
-
+    <ul class="m-0">
+        <li>
+            <a :href="link">
+                <img :src="getImagePath(icon)" :alt="name" class="socialImg-icon">
+            </a>
+        </li>
+    </ul> 
 </template>
 <script>
 export default {
-    data() {
-        return {
-            socialList: [
-                {
-                    socialName: 'Facebook',
-                    link: '#',
-                    srcIcon: 'footer-facebook.png',
-                },
-                {
-                    socialName: 'Twitter',
-                    link: '#',
-                    srcIcon: 'footer-twitter.png',
-                },
-                {
-                    socialName: 'Youtube',
-                    link: '#',
-                    srcIcon: 'footer-youtube.png',
-                },
-                {
-                    socialName: 'Pinterest',
-                    link: '#',
-                    srcIcon: 'footer-pinterest.png',
-                },
-                {
-                    socialName: 'Periscope',
-                    link: '#',
-                    srcIcon: 'footer-periscope.png',
-                },                
-            ],
-        }
+    props: {
+        name: String,
+        link: String,
+        icon: String,
     },
     methods: {
         getImagePath: function(img) {
@@ -56,22 +26,8 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
-    .socials-container {
-        @include flex (row, none, center);
-    }
-
     ul {
         @include flex (row, none, center);
-        gap: 1rem;
-    }
-
-    .social-title {
-        color: $primary-color;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 600;
-        font-family: 'Oswald', sans-serif;
-        margin-right: 2.5rem;
     }
 
     .socialImg-icon:hover {

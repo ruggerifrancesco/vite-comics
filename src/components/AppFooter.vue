@@ -55,7 +55,13 @@
                         </button>
                     </div>
 
-                    <AppSocialsListVue />
+                    <div class="socials-container">
+                        <span class="social-title">Follow Us</span>
+                    <AppSocialsListVue v-for="social in socialList"
+                        :name="social.socialName"
+                        :link="social.link"
+                        :icon="social.srcIcon"/>
+                    </div>
                 </div>
             </div>
         </section>
@@ -180,6 +186,33 @@ export default {
                     link: '#',
                 },
             ],
+            socialList: [
+                {
+                    socialName: 'Facebook',
+                    link: '#',
+                    srcIcon: 'footer-facebook.png',
+                },
+                {
+                    socialName: 'Twitter',
+                    link: '#',
+                    srcIcon: 'footer-twitter.png',
+                },
+                {
+                    socialName: 'Youtube',
+                    link: '#',
+                    srcIcon: 'footer-youtube.png',
+                },
+                {
+                    socialName: 'Pinterest',
+                    link: '#',
+                    srcIcon: 'footer-pinterest.png',
+                },
+                {
+                    socialName: 'Periscope',
+                    link: '#',
+                    srcIcon: 'footer-periscope.png',
+                },                
+            ],
         }
     },
 }
@@ -239,6 +272,19 @@ export default {
         border-width: 3px;
         text-transform: uppercase;
         font-size: 1.2rem;
+    }
+
+    .socials-container {
+        @include flex (row, none, center);
+        gap: 1rem;
+    }
+    .social-title {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 1.5rem;
     }
 
 </style>
