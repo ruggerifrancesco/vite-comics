@@ -18,17 +18,17 @@
             </button>
         </div>
     </main>
-    <AppSpecialNav />
+    <AppBuySectionNav />
 </template>
 
 <script>
 import AppCard from './new-series/AppCard.vue';
-import AppSpecialNav from './navigation-bars/AppSpecialNav.vue';
+import AppBuySectionNav from './navigation-bars/AppBuySectionNav.vue';
 
 export default {
     components: {
         AppCard,
-        AppSpecialNav
+        AppBuySectionNav
     },
     data() {
         return {

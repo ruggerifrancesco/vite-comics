@@ -1,6 +1,10 @@
 <template>
-    <section class="my_special-nav">
+    <section class="my_buy-nav">
         <div class="wrapper">
+
+            <div class="buy-navigation-btn" v-for="product in buySections">
+                
+            </div>
 
         </div>
     </section>
@@ -10,7 +14,7 @@
 export default {
     data() {
         return {
-            
+            buySections: [],
         }
     },
 }
@@ -20,8 +24,12 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
-    .my_special-nav {
+    .my_buy-nav {
         height: 200px;
         background-color: $digital-navigation;
+    }
+
+    .buy-navigation-btn * {
+        outline: 1px solid red;
     }
 </style>
