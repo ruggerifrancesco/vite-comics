@@ -6,34 +6,48 @@
 
                 <div class="links-wrapper">
                     <div class="footer-col">
+
                         <h4>Dc Comics</h4>
-                        <ul>
-                            <li v-for="link in dcComicsItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
-                            </li>
-                        </ul>
+                            <ul class="list-container">
+                                <FooterLinksDcComics v-for="referral in dcComicsItemsList"
+                                    :item="referral.item"
+                                    :link="referral.link"
+                                    />
+                            </ul>
+
                         <h4>Shop</h4>
                         <ul>
-                            <li v-for="link in shopItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
-                            </li>
+                            <FooterLinksShopVue v-for="referral in shopItemsList"
+                                :item="referral.item"
+                                :link="referral.link"
+                                />
                         </ul>
+
                     </div>
+
                     <div class="footer-col">
+
                         <h4>Dc</h4>
                         <ul>
-                            <li v-for="link in dcItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
-                            </li>
+                            <FooterLinksDc v-for="referral in dcItemsList"
+                                :item="referral.item"
+                                :link="referral.link"
+                                />
                         </ul>
+
                     </div>
+
                     <div class="footer-col">
+
                         <h4>Sites</h4>
                         <ul>
-                            <li v-for="link in siteItemsList">
-                                <a :href="link.link">{{ link.item }}</a>
-                            </li>
+                            <!-- link in siteItemsList -->
+                            <FooterLinksSites v-for="referral in siteItemsList"
+                                :item="referral.item"
+                                :link="referral.link"
+                                />
                         </ul>
+
                     </div>
                 </div>
 
@@ -69,10 +83,18 @@
 </template>
 
 <script>
-import AppSocialsListVue from './related-socials/AppSocialsList.vue';
+import FooterLinksDcComics from './footer-components/FooterLinksDcComics.vue';
+import FooterLinksShopVue from './footer-components/FooterLinksShop.vue';
+import FooterLinksDc from './footer-components/FooterLinksDc.vue';
+import FooterLinksSites from './footer-components/FooterLinksSites.vue';
+import AppSocialsListVue from './footer-components/AppSocialsList.vue';
 
 export default {
     components: {
+        FooterLinksDcComics,
+        FooterLinksShopVue,
+        FooterLinksDc,
+        FooterLinksSites,
         AppSocialsListVue,
     },
     data() {
@@ -228,7 +250,7 @@ export default {
         position: relative;
         color: white;
     }
-    ul {
+    .list-container {
         margin-bottom: 1.4rem;
     }
     h4 {
@@ -236,10 +258,7 @@ export default {
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
     }
-    li a {
-        color: $footer-links;
-        font-size: 0.92rem;
-    }
+
     .main-footer {
         padding: 2.5rem 0;
         overflow: hidden;
