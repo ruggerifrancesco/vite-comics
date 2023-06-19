@@ -1,9 +1,12 @@
 <template>
-    <section class="my_buy-nav">
+    <section class="my_store-nav">
         <div class="wrapper">
 
-            <div class="buy-navigation-btn" v-for="product in buySections">
-
+            <div v-for="store in storeSections" class="buy-store-section">
+                <a :href="store.link">
+                    <img :src="getImagePath(store.iconSrc)" :alt="store.iconProduct">
+                    <span class=""></span>
+                </a>
             </div>
 
         </div>
@@ -14,29 +17,29 @@
 export default {
     data() {
         return {
-            buySections: [
+            storeSections: [
                 {
-                    iconProduct: 'Digital Comics',
+                    iconStore: 'Digital Comics',
                     link: '#',
                     iconSrc: 'buy-comics-digital-comics.png',
                 },
                 {
-                    iconProduct: 'DC Merchandise',
+                    iconStore: 'DC Merchandise',
                     link: '#',
                     iconSrc: 'buy-comics-merchandise.png',
                 },
                 {
-                    iconProduct: 'Subscription',
+                    iconStore: 'Subscription',
                     link: '#',
                     iconSrc: 'buy-comics-subscriptions.png',
                 },
                 {
-                    iconProduct: 'Comic Shop Locator',
+                    iconStore: 'Comic Shop Locator',
                     link: '#',
                     iconSrc: 'buy-comics-shop-locator.png',
                 },
                 {
-                    iconProduct: 'DC Power Visa',
+                    iconStore: 'DC Power Visa',
                     link: '#',
                     iconSrc: 'buy-dc-power-visa.svg',
                 },
@@ -56,12 +59,21 @@ export default {
 @use '../../styles/partials/_mixins.scss' as *;
 @use '../../styles/partials/_variables.scss' as *;
 
-    .my_buy-nav {
-        height: 200px;
+    .my_store-nav {
         background-color: $digital-navigation;
     }
 
-    .buy-navigation-btn * {
+    .wrapper {
+        @include flex (row, center, center);
+    }
+
+    .buy-store-section * {
         outline: 1px solid red;
+
+        img {
+            width: 5rem;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
     }
 </style>
