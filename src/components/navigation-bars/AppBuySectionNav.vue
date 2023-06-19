@@ -4,8 +4,12 @@
 
             <div v-for="store in storeSections" class="buy-store-section">
                 <a :href="store.link">
-                    <img :src="getImagePath(store.iconSrc)" :alt="store.iconProduct">
-                    <span class=""></span>
+                    <div class="store-context">
+                        <img :src="getImagePath(store.iconSrc)" :alt="store.nameStore">
+                        <span class="store-label">
+                            {{ store.nameStore }}
+                        </span>
+                    </div>
                 </a>
             </div>
 
@@ -19,27 +23,27 @@ export default {
         return {
             storeSections: [
                 {
-                    iconStore: 'Digital Comics',
+                    nameStore: 'Digital Comics',
                     link: '#',
                     iconSrc: 'buy-comics-digital-comics.png',
                 },
                 {
-                    iconStore: 'DC Merchandise',
+                    nameStore: 'DC Merchandise',
                     link: '#',
                     iconSrc: 'buy-comics-merchandise.png',
                 },
                 {
-                    iconStore: 'Subscription',
+                    nameStore: 'Subscription',
                     link: '#',
                     iconSrc: 'buy-comics-subscriptions.png',
                 },
                 {
-                    iconStore: 'Comic Shop Locator',
+                    nameStore: 'Comic Shop Locator',
                     link: '#',
                     iconSrc: 'buy-comics-shop-locator.png',
                 },
                 {
-                    iconStore: 'DC Power Visa',
+                    nameStore: 'DC Power Visa',
                     link: '#',
                     iconSrc: 'buy-dc-power-visa.svg',
                 },
@@ -64,7 +68,7 @@ export default {
     }
 
     .wrapper {
-        @include flex (row, center, center);
+        @include flex (row, space-around, center);
     }
 
     .buy-store-section * {
@@ -75,5 +79,9 @@ export default {
             aspect-ratio: 1/1;
             object-fit: contain;
         }
+    }
+
+    .store-context {
+        @include flex (row, none, center);
     }
 </style>
