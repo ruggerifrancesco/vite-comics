@@ -123,7 +123,7 @@ export default {
     .wrapper {
         @include flex (column, none, center);
         padding-top: 5rem;
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
         position: relative;
     }
 
@@ -153,6 +153,7 @@ export default {
         text-transform: uppercase;
         padding: 0.5rem 5rem;
         font-weight: 600;
+        margin-top: 2rem;
     }
 
 </style>
