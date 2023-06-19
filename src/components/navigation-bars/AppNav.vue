@@ -1,8 +1,8 @@
 <template>
     <nav>
         <ul class="my_list-nav">
-            <li v-for="link in navItems">
-                <a :href="link.href">{{ link.item }}</a>
+            <li v-for="(link, index) in navItems" :key="index" @click="setActive(index)" :class="{ active: link.active }">
+                <a :href="link.href" :class="{ active: link.active }">{{ link.item }}</a>
             </li>
         </ul>
     </nav>
@@ -14,31 +14,26 @@ export default {
         return {
             navItems: [
                 {
-                    id: 1,
                     active: false,
                     item: 'Characters',
                     href: '#',
                 },
                 {
-                    id: 2,
-                    active: false,
+                    active: true,
                     item: 'Comics',
                     href: '#',
                 },
                 {
-                    id: 3,
                     active: false,
                     item: 'Movies',
                     href: '#',
                 },
                 {
-                    id: 4,
                     active: false,
                     item: 'Tv',
                     href: '#',
                 },
                 {
-                    id: 5,
                     active: false,
                     item: 'Games',
                     href: '#',
@@ -50,25 +45,21 @@ export default {
                     href: '#',
                 },
                 {
-                    id: 7,
                     active: false,
                     item: ' Videos',
                     href: '#',
                 },
                 {
-                    id: 8,
                     active: false,
                     item: 'Fans',
                     href: '#',
                 },
                 {
-                    id: 9,
                     active: false,
                     item: 'News',
                     href: '#',
                 },
                 {
-                    id: 10,
                     active: false,
                     item: 'Shop',
                     href: '#',
@@ -76,6 +67,13 @@ export default {
             ]
         }
     },
+    methods: {
+        setActive(index) {
+          this.navItems.forEach((item, i) => {
+            item.active = i === index;
+          });
+        },
+    } 
 }
 </script>
 
@@ -88,10 +86,28 @@ export default {
         gap: 2rem;
     }
 
-    li a {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        color: $secondary-color;
+    li {
+        position: relative;
+
+        a {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: $secondary-color;
+            
+            &.active {
+                color: $primary-color;
+            }
+        }
+      
+        &.active::after {
+            content: '';
+            height: 5px;
+            background-color: $primary-color;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -3.8rem;
+        }
     }
 </style>
