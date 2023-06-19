@@ -8,12 +8,12 @@
                     <div class="footer-col">
 
                         <h4>Dc Comics</h4>
-                            <ul class="list-container">
-                                <FooterLinksDcComics v-for="referral in dcComicsItemsList"
-                                    :item="referral.item"
-                                    :link="referral.link"
-                                    />
-                            </ul>
+                        <ul class="list-container">
+                            <FooterLinksDcComics v-for="referral in dcComicsItemsList"
+                                :item="referral.item"
+                                :link="referral.link"
+                                />
+                        </ul>
 
                         <h4>Shop</h4>
                         <ul>
@@ -41,7 +41,6 @@
 
                         <h4>Sites</h4>
                         <ul>
-                            <!-- link in siteItemsList -->
                             <FooterLinksSites v-for="referral in siteItemsList"
                                 :item="referral.item"
                                 :link="referral.link"
